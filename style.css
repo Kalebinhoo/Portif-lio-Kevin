@@ -257,40 +257,47 @@ a, button, .skills-tab, .server-icon, .skill-card, .bot-btn, .project-card {
 
 @media (max-width: 960px) {
   .app-shell {
-    flex-direction: column;
-    padding: 12px;
+    flex-direction: row;
+    padding: 12px 12px 12px 96px;
+    min-height: 100vh;
   }
 
   .server-sidebar {
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    position: static;
-    border-radius: 20px;
+    width: 72px;
+    height: calc(100vh - 24px);
+    flex-direction: column;
+    position: fixed;
+    left: 8px;
+    top: 12px;
+    border-radius: 24px;
     justify-content: flex-start;
-    overflow-x: auto;
-    gap: 12px;
-    order: initial;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    gap: 10px;
+    order: -1;
     margin-left: 0;
+    z-index: 100;
+    padding: 16px 8px;
   }
 
   .server-divider {
-    width: 2px;
-    height: 40px;
-    margin: 0 6px;
+    width: 40px;
+    height: 2px;
+    margin: 4px 0;
   }
 
   .server-icon {
-    width: 58px;
-    height: 58px;
+    width: 52px;
+    height: 52px;
   }
 
   .server-icon.active::before {
-    left: 50%;
-    top: -10px;
-    width: 30px;
-    height: 6px;
-    transform: translateX(-50%);
+    left: -8px;
+    top: 50%;
+    width: 5px;
+    height: 24px;
+    transform: translateY(-50%);
   }
 }
 
@@ -516,7 +523,26 @@ h2 {
 
 @media (max-width: 480px) {
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 8px;
+  }
+
+  .skill-card {
+    min-height: 90px;
+    width: 100%;
+    padding: 12px 10px;
+    gap: 6px;
+    border-radius: 10px;
+  }
+
+  .skill-card img {
+    width: 28px;
+  }
+
+  .skill-card p {
+    font-size: 0.7rem;
+    line-height: 1.2;
   }
 }
 
