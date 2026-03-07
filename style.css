@@ -265,7 +265,7 @@ a, button, .skills-tab, .server-icon, .skill-card, .bot-btn, .project-card {
   }
 
   .server-sidebar {
-    display: none;
+    display: none !important;
   }
 }
 
