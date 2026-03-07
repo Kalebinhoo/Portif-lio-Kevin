@@ -493,30 +493,30 @@ h2 {
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 8px !important;
-    padding: 8px !important;
+    gap: 10px !important;
+    padding: 10px !important;
     width: 100%;
     box-sizing: border-box;
   }
 
   .skill-card {
-    min-height: 80px !important;
+    min-height: 100px !important;
     width: 100% !important;
     max-width: 100% !important;
-    padding: 10px 8px !important;
-    gap: 6px !important;
-    border-radius: 8px !important;
+    padding: 14px 12px !important;
+    gap: 8px !important;
+    border-radius: 10px !important;
     box-sizing: border-box;
   }
 
   .skill-card img {
-    width: 28px !important;
+    width: 36px !important;
     height: auto;
   }
 
   .skill-card p {
-    font-size: 0.7rem !important;
-    line-height: 1.2;
+    font-size: 0.8rem !important;
+    line-height: 1.3;
     margin: 0;
   }
 }
